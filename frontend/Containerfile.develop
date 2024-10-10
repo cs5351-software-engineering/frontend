@@ -1,0 +1,3 @@
+FROM docker.io/node:20
+
+RUN npm install -g npm@latest
