@@ -1,0 +1,10 @@
+FROM frontend-develop-image
+
+COPY ./workspace /workspace
+
+WORKDIR /workspace/react
+
+RUN npm install
+RUN npm run build
+
+CMD ["npm", "run", "start"]
