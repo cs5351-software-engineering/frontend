@@ -5,7 +5,7 @@ import { useAuthContext } from "../hook/AuthContext";
 import { ROUTES } from "../constants/routes";
 import LoadingPage from "./LoadingPage";
 
-const LoginCallback = () => {
+const GoogleLoginCallback = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const {handleGoogleCallback}= useAuthContext();
@@ -36,4 +36,4 @@ const LoginCallback = () => {
 
 }
 
-export default LoginCallback;
+export default GoogleLoginCallback;
